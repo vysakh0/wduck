@@ -3,11 +3,11 @@ require File.join([File.dirname(__FILE__),'lib','wduck','version.rb'])
 spec = Gem::Specification.new do |s|
   s.name = 'wduck'
   s.version = Wduck::VERSION
-  s.author = 'Your Name Here'
-  s.email = 'your@email.address.com'
-  s.homepage = 'http://your.website.com'
+  s.author = 'Vysakh Sreeenivasan'
+  s.email = 'diplomatv@gmail.com'
+  s.homepage = 'http://vysakh0.github.com/wduck'
   s.platform = Gem::Platform::RUBY
-  s.summary = 'A description of your project'
+  s.summary = 'A command line tool for accessing zero click feature of Duck duck go'
 # Add your other files here if you make them
   s.files = %w(
 bin/wduck
