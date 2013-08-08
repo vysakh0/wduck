@@ -1,4 +1,4 @@
-module WDuck
+module Wduck
   require 'httpclient'
   require 'json'
   require 'htmlentities'

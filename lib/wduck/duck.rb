@@ -1,8 +1,8 @@
-module WDuck
+module Wduck
   require_relative 'duck_helper'
   class Duck
 
-    include WDuck::DuckHelper
+    include Wduck::DuckHelper
 
     def initialize(query)
       @parsed_data = get_json_data(query)

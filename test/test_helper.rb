@@ -1,9 +1,3 @@
-require 'test/unit'
-
-# Add test libraries you want to use here, e.g. mocha
-
-class Test::Unit::TestCase
-
-  # Add global extensions to the test case class here
-  
-end
+require 'minitest/autorun'
+require 'minitest/pride'
+require File.expand_path('../../lib/wduck.rb', __FILE__)

@@ -1,8 +1,8 @@
 require_relative 'test_helper'
 
-describe WDuck::Duck do
+describe Wduck::Duck do
 
-  subject { WDuck::Duck.new("linux") }
+  subject { Wduck::Duck.new("linux") }
   describe "function result that gets called for duck" do
     it "should respond to the function call" do
       subject.must_respond_to(:result)

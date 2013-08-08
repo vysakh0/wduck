@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wduck (0.0.1)
+    wduck (0.0.1alpha)
       gli (= 2.7.0)
 
 GEM

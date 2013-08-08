@@ -5,9 +5,11 @@ spec = Gem::Specification.new do |s|
   s.version = Wduck::VERSION
   s.author = 'Vysakh Sreeenivasan'
   s.email = 'diplomatv@gmail.com'
-  s.homepage = 'http://vysakh0.github.com/wduck'
+  s.homepage = 'http://github.com/vysakh0/wduck'
   s.platform = Gem::Platform::RUBY
+  s.description = 'A command line tool to get instant zero click result from ddg'
   s.summary = 'A command line tool for accessing zero click feature of Duck duck go'
+  s.license = 'MIT'
 # Add your other files here if you make them
   s.files = %w(
 bin/wduck

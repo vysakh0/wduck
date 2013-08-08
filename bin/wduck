@@ -14,7 +14,6 @@ include GLI::App
 program_desc 'Describe your application here'
 
 version Wduck::VERSION
-
 desc 'Describe some switch here'
 switch [:s,:switch]
 
@@ -48,7 +47,7 @@ arg_name 'Search term'
 command :duck do |c|
   c.action do |global_options,options,args|
     query = args.join ' '
-    w = WDuck::Duck.new(query)
+    w = Wduck::Duck.new(query)
     w.result
   end
 end
