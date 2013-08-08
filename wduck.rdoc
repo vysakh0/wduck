@@ -1,0 +1,5 @@
+= wduck
+
+Generate this with
+    wduck rdoc
+After you have described your command line interface

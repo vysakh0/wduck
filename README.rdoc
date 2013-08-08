@@ -1,0 +1,6 @@
+= wduck
+
+Describe your project here
+
+:include:wduck.rdoc
+
