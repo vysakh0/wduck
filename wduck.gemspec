@@ -25,10 +25,10 @@ lib/wduck/duck_helper.rb
   s.bindir = 'bin'
   s.executables << 'wduck'
   s.add_development_dependency('rake')
-  s.add_development_dependency('rdoc')
-  s.add_development_dependency('aruba')
   s.add_development_dependency('httpclient')
   s.add_development_dependency('htmlentities')
   s.add_development_dependency('rainbow')
   s.add_runtime_dependency('gli','2.7.0')
+  s.add_runtime_dependency('httpclient')
+  s.add_runtime_dependency('htmlclients')
 end
