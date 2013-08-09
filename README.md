@@ -17,7 +17,7 @@ wduck duck [Search term]
 
 ![Demo2]( duck2.gif )
 
-Few gotchas, characters like "*", "?" has different meaning in shell, so use it in quotes
+Few gotchas, characters like "?" has different meaning in shell, so use it in quotes
 ![Gotchas]( gotcha.gif )
 
 ##### License

@@ -7,25 +7,17 @@ module Wduck
       include Wduck::DuckHelper
 
       def initialize(query)
-        @parsed_data = get_json_data(query)
+        @search_data = DuckHelper::SearchData.new(query)
       end
 
       def result
-        heading(@parsed_data)
-        source(@parsed_data)
+        @search_data.heading # eg: Linus Torvalds
+        @search_data.source # eg: Wikipedia
 
-        if @parsed_data["Answer"].empty?
-          abstract_text(@parsed_data)
-
-          if @parsed_data["AbstractText"].empty?
-            @parsed_data["RelatedTopics"].each_with_index do |result, index|
-              result_text(index, result)
-            end
-          end
-
-        else
-          answer(@parsed_data)
-        end
+        @search_data.answer # Helsiniki Kernel Hacker
+        # when results has too options like Ruby: a lang, a gem etc
+        @search_data.abstract
+        @search_data.topics_result #the all related results/topics
       end
 
     end
