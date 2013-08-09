@@ -31,4 +31,5 @@ lib/wduck/duck_helper.rb
   s.add_runtime_dependency('gli','2.7.0')
   s.add_runtime_dependency('httpclient')
   s.add_runtime_dependency('htmlentities')
+  s.add_runtime_dependency('rainbow')
 end

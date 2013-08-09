@@ -1,10 +1,11 @@
 PATH
   remote: .
   specs:
-    wduck (0.1.2)
+    wduck (0.1.4)
       gli (= 2.7.0)
       htmlentities
       httpclient
+      rainbow
 
 GEM
   remote: https://rubygems.org/

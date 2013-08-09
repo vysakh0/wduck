@@ -11,36 +11,31 @@ module Wduck
 
     class SearchData
 
-      attr_reader :answer_data
       def initialize(query)
-        @parsed_data     = get_json_data(query)
-        @answer_data = check_data("Answer")
-        @abstract_text   = check_data("AbstractText")
-        @related_topics  = check_data("RelatedTopics")
-        @heading         = check_data("Heading")
-        @abstract_source = check_data("AbstractSource")
+        @parsed_data     = get_json_data query
+        @answer_data     = check_data "Answer"
+        @abstract_text   = check_data "AbstractText"
+        @related_topics  = check_data "RelatedTopics"
+        @heading         = check_data "Heading"
+        @abstract_source = check_data "AbstractSource"
       end
 
       def heading
         puts "Heading".color(:cyan).underline
-        display(@heading, :red )
-        puts ""
+        display @heading, :red
       end
 
       def source
-        display(@abstract_source, :yellow)
-        puts " "
+        display @abstract_source, :green
       end
 
       def abstract
-        display(@abstract_text, :green)
+        display @abstract_text, :yellow
       end
 
       def topics_result
         if @related_topics
-          puts ""
           puts "Related Topics".color(:white).underline
-          puts ""
           @related_topics.each do |result|
             puts "#{display(result["Text"], :green)}" if result["Text"]
           end
@@ -48,11 +43,10 @@ module Wduck
       end
 
       def answer
-        display(@answer_text, :yellow)
+        display @answer_text, :yellow
       end
 
       private
-
       def get_json_data(query)
         http = HTTPClient.new(agent_name: "ddg.rb")
         args = { q: query, format: FORMAT }
@@ -74,8 +68,8 @@ module Wduck
         re = /<("[^"]*"|'[^']*'|[^'">])*>/
         coder.decode(value.gsub(re, '')) #remove html tags, then make proper unicode conversion
       end
-
     end
+
   end
 
 end
