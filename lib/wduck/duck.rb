@@ -1,7 +1,7 @@
 module Wduck
 
   module Duck
-    require_relative 'duck_helper'
+    require 'wduck/duck_helper'
 
     class Ddg
       include Wduck::DuckHelper

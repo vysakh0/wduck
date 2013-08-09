@@ -17,6 +17,8 @@ spec = Gem::Specification.new do |s|
 bin/wduck
 lib/wduck/version.rb
 lib/wduck.rb
+lib/wduck/duck.rb
+lib/wduck/duck_helper.rb
   )
   s.require_paths << 'lib'
   s.extra_rdoc_files = ['README.rdoc','wduck.rdoc']
