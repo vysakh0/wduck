@@ -1,3 +1,3 @@
 module Wduck
-  VERSION = '0.1.1alpha'
+  VERSION = '0.1.2alpha'
 end
