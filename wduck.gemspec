@@ -1,5 +1,7 @@
 # Ensure we require the local version and not one we might have installed already
-require File.join([File.dirname(__FILE__),'lib','wduck','version.rb'])
+$:.push File.expand_path("../lib", __FILE__)
+require 'wduck/version'
+
 spec = Gem::Specification.new do |s|
   s.name = 'wduck'
   s.version = Wduck::VERSION
@@ -17,9 +19,7 @@ lib/wduck/version.rb
 lib/wduck.rb
   )
   s.require_paths << 'lib'
-  s.has_rdoc = true
   s.extra_rdoc_files = ['README.rdoc','wduck.rdoc']
-  s.rdoc_options << '--title' << 'wduck' << '--main' << 'README.rdoc' << '-ri'
   s.bindir = 'bin'
   s.executables << 'wduck'
   s.add_development_dependency('rake')

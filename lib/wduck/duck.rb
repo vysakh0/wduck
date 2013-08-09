@@ -1,8 +1,9 @@
 module Wduck
+
   module Duck
     require_relative 'duck_helper'
-    class Ddg
 
+    class Ddg
       include Wduck::DuckHelper
 
       def initialize(query)
@@ -25,9 +26,10 @@ module Wduck
         else
           answer(@parsed_data)
         end
-
       end
 
     end
+
   end
+
 end

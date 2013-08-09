@@ -48,4 +48,5 @@ module Wduck
       puts make_sane(parsed_data["Answer"]).color(:green)
     end
   end
+
 end
