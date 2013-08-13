@@ -19,6 +19,8 @@ lib/wduck/version.rb
 lib/wduck.rb
 lib/wduck/duck.rb
 lib/wduck/duck_helper.rb
+test/test_helper.rb
+test/wduck_test.rb
   )
   s.require_paths << 'lib'
   s.extra_rdoc_files = ['README.rdoc','wduck.rdoc']

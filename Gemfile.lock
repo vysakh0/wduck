@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wduck (0.1.4)
+    wduck (0.1.5)
       gli (= 2.7.0)
       htmlentities
       httpclient
